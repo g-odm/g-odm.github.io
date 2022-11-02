@@ -78,6 +78,16 @@
     margin: 0 auto;
     width: 80%;
   }
+
+  .partners {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo__img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -101,5 +111,40 @@
 
   .contacts__col:not(:last-child) {
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tails__heading {
+    padding-top: 16px;
+    margin-right: -50px;
+  }
+
+  .tails__col-5 a,
+  .tails__col-1 a {
+    margin-bottom: 16px !important;
+  }
+
+  .tails__col-5 p,
+  .tails__col-1 p {
+    margin-right: -60px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .tails__swiper-wrapper {
+    width: 100%;
+  }
+
+  .tails__company-name {
+    margin-bottom: 16px;
+  }
+
+  .tails__quotes {
+    margin-top: 16px;
+  }
+
+  .logo__img {
+    width: 60%;
   }
 }

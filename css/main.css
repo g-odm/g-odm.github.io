@@ -364,6 +364,7 @@ html * {
   width: auto;
   max-width: 100%;
   height: 400px;
+  margin-top: auto;
 }
 
 .tails__text {
