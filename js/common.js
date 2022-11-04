@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const hideOverlay = () => overlay.classList.remove("overlay--show");
   const showOverlay = () => overlay.classList.add("overlay--show");
+  const disableScroll = () => (document.body.style.overflow = "hidden");
+  const enableScroll = () => (document.body.style.overflow = "auto");
 
   openBtn.addEventListener("click", ({ currentTarget }) => {
     const opening = !!currentTarget.dataset.open;
@@ -84,9 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!opening) {
       openBtn.setAttribute("data-open", 1);
       showOverlay();
+      disableScroll();
     } else {
       openBtn.setAttribute("data-open", "");
       hideOverlay();
+      enableScroll();
     }
   });
 
@@ -96,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link.addEventListener("click", () => {
         hideOverlay();
         openBtn.setAttribute("data-open", "");
+        enableScroll();
       })
   );
 });
