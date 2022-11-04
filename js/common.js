@@ -85,22 +85,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!opening) {
       openBtn.setAttribute("data-open", 1);
-      showOverlay();
       disableScroll();
+      showOverlay();
     } else {
       openBtn.setAttribute("data-open", "");
-      hideOverlay();
       enableScroll();
+      hideOverlay();
     }
   });
 
-  Array.prototype.forEach.call(
-    document.querySelectorAll(".mobile-menu .menu__link"),
-    (link) =>
-      link.addEventListener("click", () => {
-        hideOverlay();
-        openBtn.setAttribute("data-open", "");
-        enableScroll();
-      })
-  );
+  overlay.addEventListener("click", () => {
+    openBtn.setAttribute("data-open", "");
+    enableScroll();
+    hideOverlay();
+  });
 });
