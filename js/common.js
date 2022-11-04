@@ -71,4 +71,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   // scroll end
+
+  const overlay = document.querySelector(".overlay");
+  const openBtn = document.getElementById("open-menu");
+
+  const hideOverlay = () => overlay.classList.remove("overlay--show");
+  const showOverlay = () => overlay.classList.add("overlay--show");
+
+  openBtn.addEventListener("click", ({ currentTarget }) => {
+    const opening = !!currentTarget.dataset.open;
+
+    if (!opening) {
+      openBtn.setAttribute("data-open", 1);
+      showOverlay();
+    } else {
+      openBtn.setAttribute("data-open", "");
+      hideOverlay();
+    }
+  });
+
+  Array.prototype.forEach.call(
+    document.querySelectorAll(".mobile-menu .menu__link"),
+    (link) =>
+      link.addEventListener("click", () => {
+        hideOverlay();
+        openBtn.setAttribute("data-open", "");
+      })
+  );
 });

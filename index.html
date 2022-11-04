@@ -29,6 +29,15 @@
 
   <div class="wrapper">
 
+    <div class="overlay">
+      <ul class="menu mobile-menu">
+        <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+        <li class="menu__item"><a href="#testimonials" class="menu__link">Testimonials</a></li>
+        <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">Contact Us</a></li>
+      </ul>
+    </div>
+
     <header class="header section">
       <div class="container">
         <div class="row">
@@ -48,7 +57,29 @@
                 </ul>
               </nav>
 
-              <button class="header__toggle-menu">
+              <div class="lang">
+                <div class="lang__current">
+                  <div class="lang__item">
+                    <img src="images/en.png" alt="" class="lang__img">
+                  </div>
+                </div>
+
+                <ul class="lang__dropdown">
+                  <a href="#" class="lang__link">
+                    <li class="lang__item">
+                      <img src="images/ru.png" alt="" class="lang__img">
+                    </li>
+                  </a>
+                  <a href="#" class="lang__link">
+                    <li class="lang__item">
+                      <img src="images/de.png" alt="" class="lang__img">
+                    </li>
+                  </a>
+                </ul>
+
+              </div>
+
+              <button id="open-menu" data-open class="header__toggle-menu">
                 <span></span><span></span><span></span>
               </button>
 
@@ -136,13 +167,15 @@
 
                 <p class="global-text">
                   You don’t have to give up in the face of online fraud or any forex scam. You don’t have to face the
-                  shame and frustration of losing money trading. Secure Trading Rights specializes in uncovering fraudulent
+                  shame and frustration of losing money trading. Secure Trading Rights specializes in uncovering
+                  fraudulent
                   practices, and helping people like you recover what is rightfully theirs, we can help you recover
                   funds
                   from scams and fraudulent brokers.
                 </p>
 
-                <p class="global-text">Regardless of how overwhelming your situation may appear, Secure Trading Rights has
+                <p class="global-text">Regardless of how overwhelming your situation may appear, Secure Trading Rights
+                  has
                   a
                   team of dedicated,
                   highly skilled and experienced experts who are prepared to give their all to make things right and
