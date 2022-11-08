@@ -5,77 +5,994 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="validation/css/intl.css">
 
-  <title>Document</title>
+
+  <meta name="description"
+    content="Secure Trading Rights специализируется на выявлении мошеннических действий и помогает таким людям, как вы, вернуть то, что принадлежит им по праву, мы можем помочь вам вернуть средства от мошенничества и мошеннических брокеров.">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://recovery.ellisandburlington.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Secure trading rights ">
+  <meta property="og:description"
+    content="Secure Trading Rights специализируется на выявлении мошеннических действий и помогает таким людям, как вы, вернуть то, что принадлежит им по праву, мы можем помочь вам вернуть средства от мошенничества и мошеннических брокеров.">
+  <meta property="og:image" content="https://www.facebook.com/tr?id=1062823327835333&ev=PageView&noscript=1">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="recovery.ellisandburlington.com">
+  <meta property="twitter:url" content="https://recovery.ellisandburlington.com/">
+  <meta name="twitter:title" content="Secure trading rights ">
+  <meta name="twitter:description"
+    content="Secure Trading Rights специализируется на выявлении мошеннических действий и помогает таким людям, как вы, вернуть то, что принадлежит им по праву, мы можем помочь вам вернуть средства от мошенничества и мошеннических брокеров.">
+  <meta name="twitter:image" content="https://www.facebook.com/tr?id=1062823327835333&ev=PageView&noscript=1">
+
+
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/bot.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="validate/css/intlTelInput.css">
+
+  <link rel='stylesheet' id='google-fonts-1-css'
+    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAssistant%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.0.3'
+    type='text/css' media='all' />
+
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+
+  <script defer src="js/swiper.js"></script>
+  <script defer src="js/common.js"></script>
+
+
+  <title>Secure Trading Rights</title>
 </head>
 
 <body>
-  <div class="wrap">
-    <form action="api.php" class="form" method="post">
-      <input class="form__input" disabled type="text" name="first_name" placeholder="first name">
-      <input class="form__input" disabled type="text" name="last_name" placeholder="last name">
-      <input class="form__input" disabled type="email" name="email" placeholder="email">
-      <input class="form__input" disabled type="tel" name="phone" placeholder="phone" />
-      <button class="send_order">Next</button>
 
-      <input type="hidden" name="phone2" class="phone2" />
-      <input type="hidden" name="phone_code" id="phone_code" />
-      <input type="hidden" name="ai" value="<?php echo $_GET['ai']?>" />
-      <input type="hidden" name="p" value="<?php echo $_GET['p']?>" />
-      <input type="hidden" name="clickid" value="{subid}" />
-      <input type="hidden" name="url_params" value="<?php echo http_build_query($_GET) ?>" />
-    </form>
+  <div class="wrapper">
+
+    <div class="overlay">
+      <ul class="menu mobile-menu">
+        <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+        <li class="menu__item"><a href="#testimonials" class="menu__link">Testimonials</a></li>
+        <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <header class="header section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header__container">
+
+              <div class="logo header__logo">
+                <img src="images/logo.svg" alt="" class="logo__img">
+              </div>
+
+              <nav class="header__nav">
+                <ul class="header__menu menu">
+                  <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+                  <li class="menu__item"><a href="#testimonials" class="menu__link">Testimonials</a></li>
+                  <li class="menu__item"><a href="#faq" class="menu__link">FAQ</a></li>
+                  <li class="menu__item"><a href="#contacts" class="menu__link">Contact Us</a></li>
+                </ul>
+              </nav>
+
+              <div class="lang">
+                <div class="lang__current">
+                  <div class="lang__item">
+                    <img src="images/en.png" alt="" class="lang__img">
+                  </div>
+                </div>
+
+                <ul class="lang__dropdown">
+                  <a href="#" class="lang__link">
+                    <li class="lang__item">
+                      <img src="images/ru.png" alt="" class="lang__img">
+                    </li>
+                  </a>
+                  <a href="#" class="lang__link">
+                    <li class="lang__item">
+                      <img src="images/de.png" alt="" class="lang__img">
+                    </li>
+                  </a>
+                </ul>
+
+              </div>
+
+              <button id="open-menu" data-open class="header__toggle-menu">
+                <span></span><span></span><span></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 col-lg-6">
+
+            <div class="content-wrapper">
+
+              <h1 class="header__heading">Lost Money Trading Online? <span style="color: var(--text-color-yellow)">We
+                  Can
+                  Get Your Money Back!</span>
+              </h1>
+
+              <p class="header__description">
+                If you think you're getting scammed or have been scammed, fill in the form and our team will
+                contact you and help you get your money back.
+              </p>
+
+              <div class="header__info info">
+                <div class="info__top">
+                  <img src="images/star-solid.svg" alt="star" class="info__icon">
+                  <div class="info__heading">Top Notch Service</div>
+                </div>
+
+                <p class="info__text">We will accompany you through the process, and our team of worldwide experts will
+                  gladly give you a free consultation and help you get your money back!</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-12 col-lg-6">
+
+            <div class="content-wrapper">
+              <form id="form" action="" method="post" class="form">
+
+                <h2 class="form__heading">Free Consultation Worldwide!</h2>
+
+                <div class="form__container">
+
+                  <input name="first_name" type="text" class="form__control" placeholder="Name*">
+                  <input name="phone" type="tel" class="form__control" placeholder="Phone Number*">
+                  <input name="email" type="email" class="form__control" placeholder="E-mail*">
+
+                  <select name="invest" class="form__control form__select">
+                    <option class="form__option" value="">How Much Did You Invest?</option>
+                    <option class="form__option" value=" $0 - $5,000 ">$0 - $5,000</option>
+                    <option class="form__option" value=" $5,000 - $10,000 ">$5,000 - $10,000</option>
+                    <option class="form__option" value=" $10,000 - $50,000">$10,000 - $50,000</option>
+                    <option class="form__option" value=" $50,000+">$50,000+</option>
+                  </select>
+
+                  <input name="country" type="text" class="form__control" placeholder="country">
+
+                  <textarea name="description" class="form__control form__textarea" placeholder="Description"
+                    rows="4"></textarea>
+
+                  <button class="form__submit send_order" type="submit">RECOVER YOUR MONEY NOW</button>
+
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="dog section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+
+              <div class="content-wrapper">
+                <h2 class="global-heading-2">You're not on your own.</h2>
+
+                <p class="global-text">
+                  You don’t have to give up in the face of online fraud or any forex scam. You don’t have to face the
+                  shame and frustration of losing money trading. Secure Trading Rights specializes in uncovering
+                  fraudulent
+                  practices, and helping people like you recover what is rightfully theirs, we can help you recover
+                  funds
+                  from scams and fraudulent brokers.
+                </p>
+
+                <p class="global-text">Regardless of how overwhelming your situation may appear, Secure Trading Rights
+                  has
+                  a
+                  team of dedicated,
+                  highly skilled and experienced experts who are prepared to give their all to make things right and
+                  help
+                  you with funds recovery.</p>
+
+                <a href="#form" class="button__hash-link">get help now</a>
+              </div>
+
+            </div>
+            <div class="col-12 col-lg-6">
+
+
+              <!-- <div class="content-wrapper"> -->
+              <img src="images/Dog-Statue.I16.jpg" alt="" class="dog__img">
+              <!-- </div> -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="help section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="content-wrapper content-wrapper--pr-0 d-flex">
+                <img src="images/help-logo.svg" alt="" class="help__img ml-auto">
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="content-wrapper content-wrapper--pl-0">
+                <h2 class="global-heading-2">The help you deserve and need is
+                  only a phone call away</h2>
+
+                <p class="global-text">
+                  We are proud to be part of the struggle to make the online environment safe and scam free. As we see
+                  it, helping fraud victims recover their money is about more than just helping the immediate victim –
+                  it's about sending a message to the scammers that their unscrupulous practices simply do not pay.
+                </p>
+                <a href="#form" class="button__hash-link">contact us today!</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="tails">
+        <div class="tails__row">
+          <div class="tails__full-bg tails__full-bg--left tails__full-bg--yellow "></div>
+          <div class="tails__full-bg tails__full-bg--right tails__full-bg--white"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 d-flex align-center justify-between pr-0 tails__col-1">
+
+                <div class="tails__content">
+                  <h2 class="tails__heading">Funds Recovery Service</h2>
+
+                  <p class="global-text global-text--white">
+                    Secure Trading Rights assists victims of online fraud, through
+                    the relevant recovery
+                    processes for the purposes of helping them restore their losses and return to normalcy.
+                  </p>
+
+                  <a href="#form-footer" class="button__hash-link button__hash-link--blue">Take Back What Is Yours!</a>
+                </div>
+
+                <img src="images/1.png" alt="woman" class="tails__img">
+
+              </div>
+              <div class="col-12 col-lg-6 tails__col-2">
+
+                <div class="tails__grid">
+                  <div class="grid__item">
+                    <img src="images/tails-world.svg" alt="" class="grid__img">
+                    <span class="grid__name">Worldwide Service</span>
+                  </div>
+
+                  <div class="grid__item">
+                    <img src="images/tails-lamp.svg" alt="" class="grid__img">
+                    <span class="grid__name">Team Of Experts</span>
+                  </div>
+
+                  <div class="grid__item">
+                    <img src="images/tails-horse.svg" alt="" class="grid__img">
+                    <span class="grid__name">Efficient</span>
+                  </div>
+
+                  <div class="grid__item">
+                    <img src="images/tails-men.svg" alt="" class="grid__img">
+                    <span class="grid__name">Free Consultation</span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tails__row">
+          <div class="tails__full-bg tails__full-bg--left tails__full-bg--gray "></div>
+          <div class="tails__full-bg tails__full-bg--right tails__full-bg--blue"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 d-flex align-center tails__col-3">
+
+                <p class="global-text tails__text">
+                  The business model of the fraudulent companies is based on fleecing those who, in the absence of
+                  expert representation, back down and give up in the face of adversity and obstructionism, rather
+                  than undergoing the process required to order a chargeback of the defrauded funds.
+                </p>
+
+              </div>
+              <div class="col-12 col-lg-6 d-flex align-center justify-between pl-0 tails__col-4">
+
+                <img src="images/2.png" alt="men" class="tails__img">
+
+                <div class="tails__content tails__content--move-left">
+
+                  <p class="global-text global-text--white">
+                    <span class="tails__quotes">"</span>
+                    But you aren't one of the victims which enable these fraudulent businesses to flourish. You are a
+                    fighter, and by fighting to the finish you are helping make these businesses unviable, and unable to
+                    continue preying on the weak and helpless.
+                  </p>
+
+                  <h2 class="tails__company-name">Secure Trading Rights</h2>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tails__row">
+          <div class="tails__full-bg tails__full-bg--left tails__full-bg--yellow "></div>
+          <div class="tails__full-bg tails__full-bg--right tails__full-bg--gray"></div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 d-flex align-center justify-between pr-0 tails__col-5">
+
+                <div class="tails__content">
+                  <h2 class="tails__heading">The Help You Need</h2>
+
+                  <p class="global-text global-text--white">
+                    Remember – the financial and business regulations are on your side. The fraudulent companies, are
+                    the violators, and it is they who have everything to fear from shining a light on their activities.
+                    Let us help you shine that light.
+                  </p>
+
+                  <a href="#form-footer" class="button__hash-link button__hash-link--blue">File A Complaint!</a>
+                </div>
+
+                <img src="images/1.png" alt="woman" class="tails__img">
+
+              </div>
+              <div class="col-12 col-lg-6 d-flex align-center pr-0 pos-relative tails__col-6">
+
+                <div class="tails__swiper-wrapper">
+
+
+                  <button type="button" class="tails__button tails__button--prev">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path id="prev"
+                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                    </svg>
+                  </button>
+
+                  <div class="swiper tails__swiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <div class="tails__slide-content">
+                          <p class="tails__slide-text">
+                            I’ve been scammed by and on-line trading account and got in contact with Gigi from Secure
+                            Trading Rights who provided me great advice on the process to follow to get my money back.
+                            Thank you for your kind assistance.
+                          </p>
+                          <div class="tails__slide-user">
+                            <img src="images/avatar-1.png" alt="" class="tails__slide-avatar">
+                            <span class="tails__slide-name">Raquel Salamó Clapera</span>
+                            <img src="images/tails-quote.svg" alt="" class="tails__slide-quote">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="tails__slide-content">
+                          <p class="tails__slide-text">
+                            Secure Trading Rights helped me recover significant funds from an online trading company
+                            that
+                            had very pushy sales type staff. They were a pleasure to deal with (Thank you Elizabeth
+                            specifically!)
+                          </p>
+                          <div class="tails__slide-user">
+                            <img src="images/avatar-2.png" alt="" class="tails__slide-avatar">
+                            <span class="tails__slide-name">Barry Freeman</span>
+                            <img src="images/tails-quote.svg" alt="" class="tails__slide-quote">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="tails__slide-content">
+                          <p class="tails__slide-text">
+                            Very helpful and informative, a pleasure to do business with, they couldn't help me but gave
+                            me insight and some tips, International modelling agency, MsDevineWang ceo of IMA, took me
+                            for
+                            over twenty grand and they contact you through email, they will try to blackmail you aswell,
+                          </p>
+                          <div class="tails__slide-user">
+                            <img src="images/avatar-3.png" alt="" class="tails__slide-avatar">
+                            <span class="tails__slide-name">Very helpful and informative</span>
+                            <img src="images/tails-quote.svg" alt="" class="tails__slide-quote">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="tails__slide-content">
+                          <p class="tails__slide-text">
+                            The service is totally professional and left me with confidence that my money would be
+                            returned to me. I wouldn't hesitate to recommend this company and personal. Thank you so
+                            much
+                          </p>
+                          <div class="tails__slide-user">
+                            <img src="images/avatar-4.png" alt="" class="tails__slide-avatar">
+                            <span class="tails__slide-name">Shannon Craig</span>
+                            <img src="images/tails-quote.svg" alt="" class="tails__slide-quote">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <button type="button" class="tails__button tails__button--next">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path id="next"
+                        d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                    </svg>
+                  </button>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <seciton id="testimonials" class="testimonials">
+        <div class="container">
+
+          <div class="row">
+            <div class="col">
+              <h2 class="testimonials__heading global-heading-2">What People Say About Us?</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+
+              <button type="button" class="t-swiper__button t-swiper__button--prev">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path id="prev"
+                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                </svg>
+              </button>
+
+              <div class="swiper testimonials__swiper t-swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="t-swiper__content">
+                      <div class="t-swiper__quotes-wrap">
+                        <img src="images/testimonials-quotes.svg" alt="" class="t-swiper__quotes-img">
+                      </div>
+                      <span class="t-swiper__name">Eissa Abu Rashid</span>
+
+                      <ul class="t-swiper__star-list">
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                      </ul>
+
+                      <p class="t-swiper__text">
+                        Very professional, prompt and legitimate with amazing customer service. I would
+                        without hesitance advise you to contect them for any online fraudulent scams.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="t-swiper__content">
+                      <div class="t-swiper__quotes-wrap">
+                        <img src="images/testimonials-quotes.svg" alt="" class="t-swiper__quotes-img">
+                      </div>
+                      <span class="t-swiper__name">Remco Bosma</span>
+
+                      <ul class="t-swiper__star-list">
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                      </ul>
+
+                      <p class="t-swiper__text">
+                        they responded quickly too my question and even though they don't ussually take case
+                        this small. they give me some usefull advice too work with
+                        Thank you
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="t-swiper__content">
+                      <div class="t-swiper__quotes-wrap">
+                        <img src="images/testimonials-quotes.svg" alt="" class="t-swiper__quotes-img">
+                      </div>
+                      <span class="t-swiper__name">Paul</span>
+
+                      <ul class="t-swiper__star-list">
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                      </ul>
+
+                      <p class="t-swiper__text">
+                        I simply just filled out the information and the very next day I received a call and
+                        in less than 5 minutes he told me who to contact and what to ask for. Will be using
+                        this company again.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="t-swiper__content">
+                      <div class="t-swiper__quotes-wrap">
+                        <img src="images/testimonials-quotes.svg" alt="" class="t-swiper__quotes-img">
+                      </div>
+                      <span class="t-swiper__name">Cheryl</span>
+
+                      <ul class="t-swiper__star-list">
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                      </ul>
+
+                      <p class="t-swiper__text">
+                        I received and Instagram link so I sign in and enter my bank digest , that link was
+                        actually a scammed so they have took $1000 from bank account and I want it back
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="t-swiper__content">
+                      <div class="t-swiper__quotes-wrap">
+                        <img src="images/testimonials-quotes.svg" alt="" class="t-swiper__quotes-img">
+                      </div>
+                      <span class="t-swiper__name">Shannon Craig</span>
+
+                      <ul class="t-swiper__star-list">
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                        <li class="t-swiper__star-item">
+                          <img src="images/t-star.svg" alt="star" class="t-swiper__star-img">
+                        </li>
+
+                      </ul>
+
+                      <p class="t-swiper__text">
+                        The service is totally professional and left me with confidence that my money would
+                        be returned to me. I wouldn't hesitate to recommend this company and personal.
+                        Thank you so much
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <button type="button" class="t-swiper__button t-swiper__button--next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path id="next"
+                    d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="t-swiper__pagination-wrap">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </seciton>
+
+      <section id="faq" class="accordion">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="accordion__list">
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">How To Know If I'm Being Scammed?</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <p class="accordion__text">
+                      There are many signs that a broker is a scam, these signs may include: Practicing without License,
+                      Trading without Authorization, Omitting or Misrepresenting Information and holding or delaying
+                      withdrawals. All these are signs that your broker is a scam.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">What should I do if I believe im stuck with a bad broker</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <p class="accordion__text">
+                      If you are stuck with a bad broker, review all your documents and contact us to discuss your
+                      course of action before taking any drastic measures.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">What are my chances of getting my money back?</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <p class="accordion__text">
+                      This is dependent on the circumstances of your situation. Following your free consultation, we
+                      will give you a preliminary estimate of your prospects before moving further, and we will provide
+                      you a more precise assessment once our specialists have completed the information collection and
+                      analysis phase. Secure Trading Rights makes a point of never instilling false optimism in our
+                      clients, but if we believe you have a fighting chance, which we believe you have in most
+                      circumstances, we will assist you in pursuing all available options to guarantee you obtain what
+                      is properly yours.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">What Type Of Scams Do We Help With?</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <p class="accordion__text">
+                      There are many signs that a broker is a scam, these signs may include: Practicing without License,
+                      Trading without Authorization, Omitting or Misrepresenting Information and holding or delaying
+                      withdrawals. All these are signs that your broker is a scam.
+                    </p>
+                  </div>
+                </li>
+
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">Why is it so important to stand up to online scam
+                      operators?</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <div class="accordion__text">
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Investment scams</strong> – Any
+                        type of investment scams</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Broker Fraud</strong> – We can
+                        help if you lost money to an exchange or forex broker
+                      </p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Pension scams</strong> – Lost
+                        your pension money to a scam? We can help!</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Forex Scams</strong> – Any type
+                        of forex scams</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Binary Option Scams</strong> –
+                        We can deal with any binary option scams and fraud</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Cryptocurrency Scams</strong> –
+                        Any type of Cryptocurrency scams even against the
+                        biggest exchanges!</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Phishing</strong> – If you got
+                        your bank account hacked or your credit card was stolen
+                      </p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Romance Scams</strong> – Someone
+                        convinced you to send them money? We are here to help!
+                      </p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Finance Scams</strong> – Any
+                        type of finance scams</p>
+                      <p class="accordion__paragraph"><strong class="accordion__strong">Not sure if we can help? Fill
+                          out the form and we will get back to you with a free
+                          consultation!</strong></p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="accordion__item">
+
+                  <h3 class="accordion__control">
+                    <img src="images/accordion-arrow.svg" alt="arrow" class="accordion__arrow">
+                    <span class="accordion__head-text">Companies We Successfully Retrieved Money From</span>
+                  </h3>
+
+                  <div class="accordion__content">
+                    <p class="accordion__text">
+                      We can help with all type of scams and companies even if you don’t see them on the list! Contact
+                      us urgently for a free consultation.
+                      <br>
+                      <span class="accordion__small">1Market, 247protrade, ABsystem, WorldTradeCenter, EuropeFX,
+                        Xtrading, ExpressFX, Trade360, Enfoid, Attiora, OMCMarkets, Investous, OrbitGTM, AUSForex,
+                        EtaLTD, Invcenter, LegalFX, Super1 Investments, NessFX, Investboos, Investcore, FXPN, Option24,
+                        Richmond Super, Iprimecapital, LiteForex, Centogx, Sagatrade, Lionetix, Fundspromax, Affluent
+                        Trade, 70Trades, Dripcoin, EvoCapitals, BR Capital, Littermaxfx, Remaxima, Ashford Capital,
+                        Suplexdeals, Eightcap, XM, Concept4X, Aspen-am, And many more!</span>
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="partners section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <h2 class="partners__heading">With Our Help It Is <span class="partners__yellow">Easy</span></h2>
+              <p class="partners__desc">
+                If you think you’re getting scammed or have been scammed, fill in the form and our team will contact you
+                and help you get your money back.
+              </p>
+
+              <ul class="partners__list">
+                <li class="partners__item">
+                  <div class="partners__overlay"></div>
+                  <img src="images/partners-1.png" alt="p" class="partners__img">
+                </li>
+
+                <li class="partners__item">
+                  <div class="partners__overlay"></div>
+                  <img src="images/partners-2.png" alt="p" class="partners__img">
+                </li>
+
+                <li class="partners__item">
+                  <div class="partners__overlay"></div>
+                  <img src="images/partners-3.png" alt="p" class="partners__img">
+                </li>
+
+                <li class="partners__item">
+                  <div class="partners__overlay"></div>
+                  <img src="images/partners-4.png" alt="p" class="partners__img">
+                </li>
+              </ul>
+
+              <ul class="partners__stars">
+                <li><img src="images/t-star.svg" alt="1/5" title="1/5" class="partners__star"></li>
+                <li><img src="images/t-star.svg" alt="2/5" title="2/5" class="partners__star"></li>
+                <li><img src="images/t-star.svg" alt="3/5" title="3/5" class="partners__star"></li>
+                <li><img src="images/t-star.svg" alt="4/5" title="4/5" class="partners__star"></li>
+                <li><img src="images/t-star.svg" alt="5/5" title="5/5" class="partners__star"></li>
+              </ul>
+            </div>
+
+
+            <div class="col-12 col-lg-6">
+              <form id="form-footer" action="" method="post" class="form partners__form">
+
+                <h2 class="form__heading">Contact Us <span class="partners__yellow">Today</span></h2>
+
+                <div class="form__container">
+
+                  <input name="first_name" type="text" class="form__control" placeholder="Name*">
+                  <input name="phone" type="tel" class="form__control" placeholder="Phone Number*">
+                  <input name="email" type="email" class="form__control" placeholder="E-mail*">
+
+                  <select name="invest" class="form__control form__select">
+                    <option class="form__option" value="">How Much Did You Invest?</option>
+                    <option class="form__option" value=" $0 - $5,000 ">$0 - $5,000</option>
+                    <option class="form__option" value=" $5,000 - $10,000 ">$5,000 - $10,000</option>
+                    <option class="form__option" value=" $10,000 - $50,000">$10,000 - $50,000</option>
+                    <option class="form__option" value=" $50,000+">$50,000+</option>
+                  </select>
+
+                  <input name="country" type="text" class="form__control" placeholder="country">
+
+                  <textarea name="description" class="form__control form__textarea" placeholder="Description"
+                    rows="4"></textarea>
+
+                  <button class="form__submit send_order" type="submit">RECOVER YOUR MONEY NOW</button>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 contacts__col">
+              <img src="images/contacts-logo.png" alt="" class="contacts__logo">
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-3 contacts__col">
+              <h3 class="contacts__heading">Contact Us</h3>
+
+              <ul class="contacts__list">
+                <li class="contacts__item"><a href="tel:+48536747721" class="contacts__link">+48536747721</a></li>
+                <li class="contacts__item"><a href="tel:+442080979903" class="contacts__link">+442080979903</a></li>
+                <li class="contacts__item"><a href="mailto:support@securetr.net"
+                    class="contacts__link">support@securetr.net</a></li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-3 contacts__col">
+              <h3 class="contacts__heading">Address</h3>
+              <p class="conataacts__text">Польша, Варшава, Ягилонская 78</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="disclaimer ">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="disclaimer__text">
+                Disclaimer: <br>
+                1. Secure Trading Rights provides free consultations. Chargeback and other fund recovery programs
+                contracted thereafter are subject to retainers, fees and/or commissions depending on the individual case
+                history and the type of service selected Secure Trading Rights does not offer any financial investments
+                or advice. <br>
+                2. Residents in the United Kingdom: Secure Trading Rights does not assist and/or advise consumers with
+                complaints in relation to mis-sold investment products which have been purchased from firms regulated by
+                the UK Prudential Regulation Authority (PRA) and/or the UK Financial Conduct Authority (FCA). <br>
+                3.Secure Trading Rights does not offer services to consumers in Great Britain in relation to activities
+                regulated by the UK Financial Conduct Authority (FCA).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </div>
 
 
-  
+  <div class="bot">
+    <div class="bot__header">
 
+      <img src="images/logo.svg" alt="" class="bot__logo">
 
+      <div class="header__mid">
+        <h2 class="bot__heading">Secure Trading Rights</h2>
+        <p class="bot__desc">Schedule a Free Consultation</p>
+      </div>
+
+      <button class="bot__close">
+        <img src="images/close-bot.svg" alt="close" class="bot__close-icon">
+      </button>
+
+    </div>
+
+    <div class="bot__body">
+
+      <div class="bg">
+        <img src="images/logo.svg" alt="logo" class="bg__logo">
+      </div>
+
+      <div class="bot__messages"></div>
+
+    </div>
+  </div>
 
   <style>
-    body {
-      overflow: hidden;
-    }
-
-    .wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .form__input--error {
-      border: 1px solid red !important;
-    }
-
-    .form__input--valid {
-      border: 1px solid #03ef02 !important;
-    }
-
-    .form {
-      width: 400px;
-      display: flex;
-      flex-direction: column;
-
-      padding: 20px;
-
-      border: 1px solid red;
-      border-radius: 5px;
-      position: relative;
-      overflow: hidden;
-      font-family: sans-serif;
-
-    }
-
-    .form__input,
-    .send_order {
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid black;
-      outline: none;
-      border-radius: 5px;
-    }
-
     .iti {
       margin-bottom: 10px;
     }
@@ -83,176 +1000,13 @@
     .iti input {
       width: 100%;
     }
-
-    .number-verify {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      transition: .2s;
-      user-select: none;
-
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      z-index: 50;
-      background-color: rgba(0, 0, 0, .95);
-
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-20px);
-    }
-
-    .number-verify__body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .number-verify--show {
-      opacity: 1;
-      visibility: visible;
-      transform: translate(0);
-    }
-
-    .number-verify__change {
-      text-align: center;
-      color: #fff;
-      cursor: pointer;
-      /* color: #1d61b9; */
-      font-family: sans-serif;
-
-      font-size: 14px;
-    }
-
-    .number-verify__change:hover {
-      text-decoration: underline;
-    }
-
-
-    .number-verify__input--error {
-      border: 2px solid red;
-    }
-
-    .number-verify__input-container {
-      display: flex;
-      align-items: stretch;
-      border-radius: 5px;
-      overflow: hidden;
-      font-size: 14px;
-      width: 100%;
-      height: 40px;
-    }
-
-    .number-verify__input {
-      height: inherit;
-      width: 100%;
-      border: none;
-      outline: none;
-      padding: 0 10px;
-      font-size: inherit;
-    }
-
-    .number-verify__again {
-      /* height: 100% !important; */
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0px 10px;
-      white-space: nowrap;
-      border-left: 1px solid red;
-    }
-
-    .number-verify__again--active {
-      cursor: pointer;
-    }
-
-    .number-verify__again--active:hover {
-      text-decoration: underline;
-    }
-
-    .number-verify__send {
-      height: 40px;
-      padding: 0;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 100%;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-
-
-
-    .lds-ring {
-      display: inline-block;
-      position: relative;
-      width: 80px;
-      height: 80px;
-    }
-
-    .lds-ring div {
-      box-sizing: border-box;
-      display: block;
-      position: absolute;
-      width: 64px;
-      height: 64px;
-      margin: 8px;
-      border: 8px solid #fff;
-      border-radius: 50%;
-      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-      border-color: #fff transparent transparent transparent;
-    }
-
-    .lds-ring div:nth-child(1) {
-      animation-delay: -0.45s;
-    }
-
-    .lds-ring div:nth-child(2) {
-      animation-delay: -0.3s;
-    }
-
-    .lds-ring div:nth-child(3) {
-      animation-delay: -0.15s;
-    }
-
-    @keyframes lds-ring {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    #overlay {
-      background: rgba(0, 0, 0, .4);
-      position: fixed;
-      z-index: 9999999999999;
-      width: 100%;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: none;
-    }
-
-    #overlay.show {
-      display: flex;
-    }
   </style>
 
+  <script src="js/jquery.js"></script>
 
-  <script src="validation/js/intl.js"></script>
-  <script src="validation/js/FormValidator.js"></script>
-  <script src="validation/js/validate.js"></script>
+  <script src="validate/js/intlTelInput.min.js"></script>
+  <script src="validate/js/utils.min.js"></script>
+  <script src="validate/js/validate.js"></script>
 </body>
 
 </html>

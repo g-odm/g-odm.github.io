@@ -1,0 +1,84 @@
+.bot {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  border-radius: 10px;
+
+  min-width: 425px;
+  height: 700px;
+  background-color: #e5e5e5;
+  box-shadow: 2px 2px 10px 10px rgba(000, 4);
+  z-index: 100;
+  overflow: hidden;
+  display: none;
+}
+
+.bot__header {
+  padding: 0 40px;
+  height: 85px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gobal-color-blue);
+}
+
+.bot__logo {
+  width: 50px;
+  margin-right: 30px;
+}
+
+.bot__close {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color .4s;
+  cursor: pointer;
+}
+
+.bot__close:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bot__close-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.bot__desc {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.75px;
+  padding-top: 5px;
+}
+
+
+.bot__body {
+  position: relative;
+}
+
+.bot__messages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
